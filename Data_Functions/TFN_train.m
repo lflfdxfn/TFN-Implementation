@@ -70,14 +70,6 @@ function [test_auc, test_pr, train_time, test_time] = TFN_train(n_rule, trainDat
             BL=HM_L0-ratio.*H_L1-(1-ratio).*H_L2;
             BR=HM_R0-ratio.*H_R1-(1-ratio).*H_R2;
             B=BL+BR;
-        elseif strcmp(MIXUP.type, 'mixup')
-            [LM1,LM2, RM1,RM2, mix_Y, ratio] = mixup(trainData.X, trainData.Y,MIXUP.M);   
-            H_L1=ComputeP_test(LM1,n_rule,center);
-            H_L2=ComputeP_test(LM2,n_rule,center);
-            H_R1=ComputeP_test(RM1,n_rule,center);
-            H_R2=ComputeP_test(RM2,n_rule,center);
-
-            B = (H_L1 + H_R1).*ratio + (H_L2 + H_R2).*(1-ratio);
         end
         
         rng(s);
@@ -109,25 +101,6 @@ function [LM1,LM2,LM_mixup,RM1,RM2,RM_mixup,ratio] = ICR_mixup(X,M)
     RM1=randSampBack(X,M);
     RM2=randSampBack(X,M);
     RM_mixup=RM1.*ratio+RM2.*(1-ratio);
-end
-
-function [LM1,LM2, RM1,RM2, mix_Y, ratio] = mixup(X,Y,M)
-    ratio = random('uniform', 0, 1);
-
-    [LM1, LM1_index]=randSampBack2(X,M);
-    [LM2, LM2_index]=randSampBack2(X,M);
-    YL1 = Y(LM1_index);
-    YL2 = Y(LM2_index);
-    
-    [RM1, RM1_index]=randSampBack2(X,M);
-    [RM2, RM2_index]=randSampBack2(X,M);
-    YR1 = Y(RM1_index);
-    YR2 = Y(RM2_index);
-
-    Y1 = (YL1 + YR1).*4;
-    Y2 = (YL2 + YR2).*4;
-
-    mix_Y = Y1.*ratio + Y2.*(1-ratio);
 end
 
 function [y_hat]=PTFN_test(trainData,testData,n_rule,center,E,w)
@@ -215,16 +188,6 @@ function [sample_data]=randSamp(datamatrix,num_sample)
 end
 
 function [sample_data]=randSampBack(datamatrix,num_sample)
-% Sample specific number of data lines from datamatrix randomly
-% input: datamatrix, input datamatrix
-%        num_sample, required number of sample data
-% output: data matrix composed of sampled data lines
-    [N,~]=size(datamatrix);
-    sampled_index=randi(N,1,num_sample);
-    sample_data=datamatrix(sampled_index,:);
-end
-
-function [sample_data, sampled_index]=randSampBack2(datamatrix,num_sample)
 % Sample specific number of data lines from datamatrix randomly
 % input: datamatrix, input datamatrix
 %        num_sample, required number of sample data

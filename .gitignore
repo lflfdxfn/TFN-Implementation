@@ -1,4 +1,5 @@
 Datasets/*.mat
+Datasets/*.zip
 main.asv
 Logs/*.csv
 Logs/*.txt

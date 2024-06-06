@@ -13,16 +13,16 @@ DATA=struct('datasets', datasets, 'start',1, 'end', length(datasets));
 WSAD=struct('known_outlier',60, 'contamination',0.02);
 %4.Pretrain settings
 PCA=struct('pca',1, 'min_dim',100, 'threshold',0.99);
-% "search": search for number of rules, or "fixed": just use the fixed numbers in fix_rule
+%5."search": search for number of rules, or "fixed": just use the fixed numbers in fix_rule
 fix_rule=[];
 PTRAIN=struct('method','search', 'min_rule',2, 'max_rule', 10, 'fix_rule',fix_rule);
-%5.Data Augmentation module settings
+%6.Data Augmentation module settings
 AUG=struct('num_train',10240, 'c_values',[8,4,0], 'E_test', 30);
-%6.Consistency Regularization Term settings, "No", "ICR", "mixup"
+%7.Consistency Regularization Term settings, "No", "ICR"
 MIXUP=struct('type','ICR', 'M', 20000, 'gamma',10);
-%7.L2 Regularization setting
+%8.L2 Regularization setting
 REGU=struct('lambda',1);
-%8.Cluster methods used: "p_fcm", or "k-means"
+%9.Cluster methods used: "p_fcm", or "k-means"
 TRAIN=struct('cluster','p_fcm');
 
 %% Preparation
