@@ -1,5 +1,5 @@
 # TFN
-Official implementation of TFN: "Twin Fuzzy Networks with Interpolation Consistency Regularization for Weakly-supervised Anomaly Detection" on IEEE Transactions on Fuzzy System
+Official implementation of TFN: "Twin Fuzzy Networks with Interpolation Consistency Regularization for Weakly-supervised Anomaly Detection" on IEEE Transactions on Fuzzy Systems
 
 ## Dependencies
 MATLAB R2022b
