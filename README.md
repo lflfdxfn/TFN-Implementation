@@ -40,6 +40,19 @@ MATLAB R2022b
   9. `TRAIN`: `cluster` choose the cluster method used in TFN, choosen between "p_fcm" and "k-means".
 
 ## Full Paper
-The full paper can be found at [this link]().
+The full paper can be found at [this link](https://ieeexplore.ieee.org/document/10552872) (Early Acess).
 
 ## Citation
+```
+@ARTICLE{cao2024twin,
+  author={Cao, Zhi and Shi, Ye and Chang, Yu-Cheng and Yao, Xin and Lin, Chin-Teng},
+  journal={IEEE Transactions on Fuzzy Systems}, 
+  title={Twin Fuzzy Networks With Interpolation Consistency Regularization for Weakly-Supervised Anomaly Detection}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-12},
+  keywords={Anomaly detection;Training;Prototypes;Uncertainty;Interpolation;Optimization;Knowledge engineering;Data uncertainty;fuzzy c-means clustering;interpolation consistency regularization;twin fuzzy networks;weakly-supervised anomaly detection},
+  doi={10.1109/TFUZZ.2024.3412435}}
+
+```
