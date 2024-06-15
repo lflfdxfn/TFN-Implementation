@@ -54,5 +54,4 @@ The full paper can be found at [this link](https://ieeexplore.ieee.org/document/
   pages={1-12},
   keywords={Anomaly detection;Training;Prototypes;Uncertainty;Interpolation;Optimization;Knowledge engineering;Data uncertainty;fuzzy c-means clustering;interpolation consistency regularization;twin fuzzy networks;weakly-supervised anomaly detection},
   doi={10.1109/TFUZZ.2024.3412435}}
-
 ```
