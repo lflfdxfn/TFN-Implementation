@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.1109/TFUZZ.2024.3412435.svg)](https://doi.org/10.1109/TFUZZ.2024.3412435)
+
 # TFN
 Official implementation of TFN: "Twin Fuzzy Networks with Interpolation Consistency Regularization for Weakly-supervised Anomaly Detection" on IEEE Transactions on Fuzzy Systems
 
