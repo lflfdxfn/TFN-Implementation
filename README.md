@@ -12,8 +12,8 @@ MATLAB R2022b
 * Generate your anomaly detection datasets:
   * All datasets mentioned in the paper are generated using the python code of [DevNet](https://github.com/GuansongPang/deviation-network) proposed in the SIGKDD paper [Deep Anomaly Detection with Deviation Networks](https://dl.acm.org/doi/10.1145/3292500.3330871)
   * To run your own datasets with weakly supervision, name your generated train/test datasets in the following format:
-    * Train dataset: "{}_weakly_train_{}_{}.mat".format(origin_name, contamination_rate, num_known_anomalies)
-    * Test dataset: "{}_weakly_test_{}_{}.mat".format(origin_name, contamination_rate, num_known_anomalies)
+    * Train dataset: "{}\_weakly_train_{}_{}.mat".format(origin_name, contamination_rate, num_known_anomalies)
+    * Test dataset: "{}\_weakly_test_{}_{}.mat".format(origin_name, contamination_rate, num_known_anomalies)
 
 
 ## Experiments
