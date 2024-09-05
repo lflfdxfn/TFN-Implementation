@@ -51,9 +51,9 @@ The full paper can be found at [this link](https://ieeexplore.ieee.org/document/
   journal={IEEE Transactions on Fuzzy Systems}, 
   title={Twin Fuzzy Networks With Interpolation Consistency Regularization for Weakly-Supervised Anomaly Detection}, 
   year={2024},
-  volume={},
-  number={},
-  pages={1-12},
+  volume={32},
+  number={9},
+  pages={5086-5097},
   keywords={Anomaly detection;Training;Prototypes;Uncertainty;Interpolation;Optimization;Knowledge engineering;Data uncertainty;fuzzy c-means clustering;interpolation consistency regularization;twin fuzzy networks;weakly-supervised anomaly detection},
   doi={10.1109/TFUZZ.2024.3412435}}
 ```
