@@ -42,7 +42,7 @@ MATLAB R2022b
   9. `TRAIN`: `cluster` choose the cluster method used in TFN, choosen between "p_fcm" and "k-means".
 
 ## Full Paper
-The full paper can be found at [this link](https://ieeexplore.ieee.org/document/10552872) (Early Access).
+The full paper can be found at [this link](https://ieeexplore.ieee.org/document/10552872).
 
 ## Citation
 ```
